@@ -1,4 +1,7 @@
-# lovemonkeys
+# 🐵 lovemonkeys 🐵
+<div align="center">
+🙈🙉🙊
+</div>
 Hi, in this repository I'm making a simple site, using just HTML, CSS and JS, where I use to train my skills and remember some ones.
 <hr>
 
