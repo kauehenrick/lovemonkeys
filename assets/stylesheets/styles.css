@@ -1,13 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-image: linear-gradient(90deg, #e2b6cf, #f6efee);
     font-family: 'Courier New', Courier, monospace;
+    min-height: 100vh;
 }
 
 header {
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row nowrap;
     width: 100%;
-    height: 2em;
-    padding: 1.5em;
+    height: 5%;
+}
+
+.title_header {
+    font-size: 2.5em;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 nav {
@@ -24,10 +42,15 @@ nav {
     border: transparent;
     cursor: pointer;
     color: #fff;
+    font-size: 1.3em;
+    padding-right: .5em;
+}
+.navbtn:hover {
+    color: #000;
 }
 
 .one {
-    margin-left: 5em;
+    margin-left: 3em;
 }
 
 main {
@@ -35,4 +58,21 @@ main {
     margin: auto;
     text-align: justify;
     width: 65%;
+}
+
+/*classes dos sections*/
+.artigos {
+    display: none;
+}
+
+.galeria {
+    display: none;
+}
+
+.loja {
+    display: none;
+}
+
+.sobre {
+    display: none;
 }
