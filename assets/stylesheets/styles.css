@@ -10,6 +10,8 @@ body {
     background-image: linear-gradient(90deg, #e2b6cf, #f6efee);
     font-family: 'Oswald';
     min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 header {
