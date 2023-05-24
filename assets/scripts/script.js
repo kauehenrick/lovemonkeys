@@ -93,5 +93,5 @@ function mudarSobre() {
     artigos.style.display = "none";
     gallery.style.display = "none";
     loja.style.display = "none";
-    sobre.style.display = "block";
+    sobre.style.display = "flex";
 };
