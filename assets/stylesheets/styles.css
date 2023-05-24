@@ -104,8 +104,15 @@ main {
 
 /*classes dos sections*/
 h2 {
+    display: flex;
+    align-items: center;
     font-size: 1.8em;
     text-transform: uppercase;
+    background-color: #f2ecdf;
+    padding-left: 1em;
+    height: 2em;
+    border-radius: 10px;
+    filter: drop-shadow(-2px 12px 10px #f2ecdf);
 }
 
 #artigos {
