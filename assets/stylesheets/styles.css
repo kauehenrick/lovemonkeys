@@ -102,6 +102,7 @@ main {
 }
 /*classes dos sections*/
 h2 {
+    font-size: 1.8em;
     text-transform: uppercase;
 }
 #artigos {
@@ -134,6 +135,43 @@ h2 {
 #loja {
     display: none;
 }
+.produtos {
+    display: grid;
+    height: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    grid-template-columns: 20px 20px 20px;
+    grid-column-gap: 20em;
+    grid-row-gap: 2em;
+}
+.produto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    max-width: 25em;
+    height: 20em;
+    width: 18em;
+    border-radius: 5px;
+    background-color: #f6efee; 
+    filter: drop-shadow(0px 5px 10px #e365c1);
+}
+.produto:hover {
+    background-color: #e365c1;
+    filter: blur(.4px);
+    filter: drop-shadow(0px 5px 10px #000);
+}
+.prod_img {
+    height: 50%;
+}
+.btn_comprar {
+    font-family: 'Oswald';
+    background-color: #e2b6cf;
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid 2px #fff;
+    text-transform: uppercase;
+}
 
 #sobre {
     display: none;
@@ -152,7 +190,7 @@ h2 {
 
 .content {
     text-align: justify;
-    text-indent: 1.2em;
+    text-indent: 1em;
     font-size: 1.1em;
 }
 
