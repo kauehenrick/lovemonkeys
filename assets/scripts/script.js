@@ -1,3 +1,4 @@
+/*
 const galeria = [
     {
         src: "assets/img/ (1).jpg"
@@ -48,6 +49,7 @@ const galeria = [
         src: "assets/img/(16).jpg"
     }
 ];
+*/
 
 //tornando os botões do navbar funcionais;
 const home = document.getElementById("home");

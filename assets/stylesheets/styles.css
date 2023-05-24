@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oswald:wght@300;400&display=swap');;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oswald:wght@300;400&display=swap');
+;
 
 * {
     box-sizing: border-box;
@@ -100,11 +101,13 @@ main {
     min-height: 30em;
     width: 90%;
 }
+
 /*classes dos sections*/
 h2 {
     font-size: 1.8em;
     text-transform: uppercase;
 }
+
 #artigos {
     display: none;
 }
@@ -112,6 +115,33 @@ h2 {
 #galeria {
     display: none;
 }
+
+.articles {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.articles_card {
+    display: flex;
+    background-color: #e2b6cf;
+    height: auto;
+    padding: 1em;
+    margin: 1em;
+    filter: drop-shadow(-2px 12px 10px #000);
+}
+
+.artigos_img {
+    width: 30%;
+    align-self: center;
+}
+
+.a_content {
+    text-align: justify;
+    padding: 1em;
+    padding-right: 2em;
+    text-indent: 1em;
+}
+
 
 .images {
     display: grid;
@@ -132,9 +162,41 @@ h2 {
     filter: drop-shadow(0 0 3px #000);
 }
 
+.images_m:hover {
+    animation: shake 0.70s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
 #loja {
     display: none;
 }
+
 .produtos {
     display: grid;
     height: auto;
@@ -144,6 +206,7 @@ h2 {
     grid-column-gap: 20em;
     grid-row-gap: 2em;
 }
+
 .produto {
     display: flex;
     justify-content: center;
@@ -153,17 +216,20 @@ h2 {
     height: 20em;
     width: 18em;
     border-radius: 5px;
-    background-color: #f6efee; 
+    background-color: #f6efee;
     filter: drop-shadow(0px 5px 10px #e365c1);
 }
+
 .produto:hover {
     background-color: #e365c1;
     filter: blur(.4px);
     filter: drop-shadow(0px 5px 10px #000);
 }
+
 .prod_img {
     height: 50%;
 }
+
 .btn_comprar {
     font-family: 'Oswald';
     background-color: #e2b6cf;
@@ -190,7 +256,7 @@ h2 {
 
 .content {
     text-align: justify;
-    text-indent: 1em;
+    text-indent: .8em;
     font-size: 1.1em;
 }
 
