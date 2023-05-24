@@ -57,16 +57,33 @@ main {
     display: block;
     margin: auto;
     text-align: justify;
-    width: 65%;
+    height: auto;
+    width: 90%;
 }
 
 /*classes dos sections*/
 .artigos {
     display: none;
 }
-
+/*
 .galeria {
     display: none;
+}
+*/
+.images {
+    display: grid;
+    height: auto;
+    grid-template-columns: 20px 20px 20px 20px;
+    grid-column-gap: 20em;
+    grid-row-gap: 2em;
+}
+.images_m {
+    max-width: 25em;
+    height: 20em;
+    width: 20em;
+    object-fit: cover;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 3px #000);
 }
 
 .loja {
@@ -75,4 +92,17 @@ main {
 
 .sobre {
     display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    margin-top: 1em;
+    background-color: #e365c1;
+    width: 100%;
+    height: 5em;
+}
+.footer_text {
+    margin-left: 1rem ;
 }
