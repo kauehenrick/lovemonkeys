@@ -14,20 +14,22 @@
         <img class="logo" src="assets/img/monkey_icon.png">
         <h1 class="title_header">Love Monkeys</h1>
     </header>
-    <nav>
-        <button class="navbtn one">Home</button>
-        <button class="navbtn">Artigos</button>
-        <button class="navbtn">Galeria</button>
-        <button class="navbtn">Loja</button>
-        <button class="navbtn">Sobre</button>
+    <nav class="nav_btns">
+        <button id="b_home" class="navbtn one" onclick="mudarHome()">Home</button>
+        <button id="b_artigos" class="navbtn" onclick="mudarArtigos()">Artigos</button>
+        <button id="b_galeria" class="navbtn" onclick="mudarGaleria()">Galeria</button>
+        <button id="b_loja" class="navbtn" onclick="mudarLoja()">Loja</button>
+        <button id="b_sobre" class="navbtn" onclick="mudarSobre()">Sobre</button>
     </nav>
-    <main>
-        <h2>Bem-vindo ao Love Monkeys!</h2>
-        <p>Se você é apaixonado por macacos e deseja aprender mais sobre essas criaturas adoráveis e fascinantes, você
-            veio ao lugar certo! No Love Monkeys, oferecemos uma variedade de conteúdo relacionado a macacos para
-            satisfazer sua curiosidade e alimentar seu amor por essas criaturas incríveis. Aqui está uma visão geral do
-            que você encontrará em nosso site:</p>
-        <section class="artigos">
+    <main class="main">
+        <section class="site_section" id="home">
+            <h2 class="welcome">Bem-vindo ao Love Monkeys!</h2>
+            <p>Se você é apaixonado por macacos e deseja aprender mais sobre essas criaturas adoráveis e fascinantes, você
+                veio ao lugar certo! No Love Monkeys, oferecemos uma variedade de conteúdo relacionado a macacos para
+                satisfazer sua curiosidade e alimentar seu amor por essas criaturas incríveis. Aqui está uma visão geral do
+                que você encontrará em nosso site:</p>
+        </section>
+        <section class="site_section" id="artigos">
             <h2>Artigos Informátivos</h2>
             <p>Descubra o fascinante mundo dos macacos! De suas habilidades surpreendentes a suas intrigantes interações
                 sociais, nossos artigos informativos revelam os segredos dos primatas de forma envolvente e
@@ -37,7 +39,7 @@
             <article>
             </article>
         </section>
-        <section class="galeria">
+        <section class="site_section" id="galeria">
             <h2>Galeria de Fotos</h2>
             <p>Deslumbre-se com a magia dos macacos através de nossa galeria de fotos de tirar o fôlego! Testemunhe
                 momentos de pura fofura, diversão e ternura capturados em imagens impressionantes. Cada foto revela a
@@ -62,7 +64,7 @@
                 <img class="images_m" src="assets/img/(16).jpg" alt="macaco">
             </div>
         </section>
-        <section class="loja">
+        <section class="site_section" id="loja">
             <h2>Loja</h2>
             <p>Mostre seu amor pelos macacos ao mundo! Nossa loja virtual está repleta de produtos exclusivos para todos
                 os entusiastas de primatas. Vista-se com estilo com nossas camisetas temáticas, desfrute de sua bebida
@@ -70,7 +72,7 @@
                 encantadores. Encontre algo especial para você ou presenteie alguém com um item exclusivo do Love
                 Monkeys!</p>
         </section>
-        <section class="sobre">
+        <section class="site_section" id="sobre">
             <h2>Sobre o Love Monkeys: Paixão que se Transformou em Realidade!</h2>
             <p>Bem-vindo ao Love Monkeys, onde uma paixão avassaladora por macacos se transformou em um projeto
                 emocionante! Nosso site foi criado por um entusiasta incansável dessas criaturas adoráveis, cujo amor
@@ -99,6 +101,7 @@
     <footer>
         <p class="footer_text">Kauê Henrick, 2023. Todos os direitos reservados.</p>
     </footer>
+    <script src="assets/scripts/script.js"></script>
 </body>
 
 </html>

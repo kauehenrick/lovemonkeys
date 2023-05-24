@@ -62,14 +62,14 @@ main {
 }
 
 /*classes dos sections*/
-.artigos {
+#artigos {
     display: none;
 }
-/*
-.galeria {
+
+#galeria {
     display: none;
 }
-*/
+
 .images {
     display: grid;
     height: auto;
@@ -86,11 +86,11 @@ main {
     filter: drop-shadow(0 0 3px #000);
 }
 
-.loja {
+#loja {
     display: none;
 }
 
-.sobre {
+#sobre {
     display: none;
 }
 
