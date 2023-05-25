@@ -327,3 +327,8 @@ footer {
 .footer_text {
     margin-left: 1rem;
 }
+
+.footer_img {
+    max-width: 100px;
+    padding-left: 1em;
+}
