@@ -11,6 +11,8 @@ body {
     font-family: 'Oswald';
     min-height: 100vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -113,16 +115,51 @@ h2 {
     background-color: #f2ecdf;
     padding-left: 1em;
     height: 2em;
+    min-width: 40%;
     border-radius: 10px;
     filter: drop-shadow(-2px 12px 10px #f2ecdf);
 }
 
-#artigos {
-    display: none;
+.welcome {
+    justify-content: center;
 }
 
-#galeria {
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.carrossel {
+    box-shadow: 2px 2px 4px #000;
+    overflow: hidden;
+    height: 500px;
+    width: 500px;
+    margin-bottom: 2em;
+}
+
+.container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.c_img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.h_content {
+    width: 70%;
+    margin-bottom: 1.5em;
+}
+
+#artigos {
     display: none;
+    justify-content: center;
+    flex-flow: column wrap;
 }
 
 .articles {
@@ -151,6 +188,11 @@ h2 {
     text-indent: 1em;
 }
 
+#galeria {
+    display: none;
+    justify-content: center;
+    flex-flow: column wrap;
+}
 
 .images {
     display: grid;
@@ -204,15 +246,19 @@ h2 {
 
 #loja {
     display: none;
+    justify-content: center;
+    flex-flow: column wrap;
 }
 
 .produtos {
     display: grid;
     height: auto;
+    width: 100%;
     margin-top: 2em;
     margin-bottom: 2em;
-    grid-template-columns: 20px 20px 20px;
-    grid-column-gap: 20em;
+    margin-left: 15%;
+    grid-template-columns: 15% 15% 15%;
+    grid-column-gap: 10em;
     grid-row-gap: 2em;
 }
 
@@ -250,7 +296,8 @@ h2 {
 
 #sobre {
     display: none;
-    flex-direction: column;
+    justify-content: center;
+    flex-flow: column wrap;
 }
 
 .sobre_pic {

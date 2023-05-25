@@ -59,7 +59,7 @@ const sobre = document.getElementById("sobre");
 const loja = document.getElementById("loja");
 
 function mudarHome() {
-    home.style.display = "block";
+    home.style.display = "flex";
     artigos.style.display = "none";
     gallery.style.display = "none";
     loja.style.display = "none";
@@ -68,7 +68,7 @@ function mudarHome() {
 
 function mudarArtigos () {
     home.style.display = "none";
-    artigos.style.display = "block";
+    artigos.style.display = "flex";
     gallery.style.display = "none";
     loja.style.display = "none";
     sobre.style.display = "none";
@@ -77,7 +77,7 @@ function mudarArtigos () {
 function mudarGaleria() {
     home.style.display = "none";
     artigos.style.display = "none";
-    gallery.style.display = "block";
+    gallery.style.display = "flex";
     loja.style.display = "none";
     sobre.style.display = "none";
 };
@@ -86,7 +86,7 @@ function mudarLoja() {
     home.style.display = "none";
     artigos.style.display = "none";
     gallery.style.display = "none";
-    loja.style.display = "block";
+    loja.style.display = "flex";
     sobre.style.display = "none";
 };
 
@@ -97,3 +97,22 @@ function mudarSobre() {
     loja.style.display = "none";
     sobre.style.display = "flex";
 };
+
+//carrossel;
+const imgs = document.getElementById("img");
+const img = document.querySelectorAll("#img img");
+
+let idx = 0;
+
+function carrossel(){
+    idx++;
+
+    if (idx > img.length - 1){
+        idx = 0;
+    }
+
+    imgs.style.transform = `translateX(${-idx * 500}px)`;
+
+}
+
+setInterval(carrossel, 6000);
